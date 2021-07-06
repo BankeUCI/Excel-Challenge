@@ -34,6 +34,9 @@ max_decrease_month = monthly_profit_losses_change.index(min(monthly_profit_losse
 
 print("Financial Analysis")
 print("----------------------------------------")
+print(f"Total Months: {len(total_months)}")
+print((f"Total: ${sum(total_profit_losses)}"))
+print((f"Average Change: {round(sum(monthly_profit_losses_change)/len(monthly_profit_losses_change),2)}"))
 print(f"Greatest Increase in Profits: {total_months[max_increase_month]} (${(str(max_increase_value))})")
 print(f"Greatest Decrease in Losses:  {total_months[max_decrease_month]} (${(str(max_decrease_value))})")
 
